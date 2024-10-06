@@ -33,7 +33,7 @@ public class DotChaser {
   // EEEEEK! STATIC METHODS!!! PLEASE FIND THEM A BETTER HOME.
   public static void rightTurn(Thing t) {
     t.dir = (t.dir + 1) % 4;
-  }
+  } 
 
   public static void leftTurn(Thing t) {
     t.dir = (t.dir + 3) % 4;
