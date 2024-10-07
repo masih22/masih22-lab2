@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Thing{
 
     protected int col;
@@ -13,28 +15,25 @@ public class Thing{
         this.dir = 0;
     }
 
-    public void rightTurn(Thing t){
-        t.dir = (t.dir + 1) % 4;
+    public void rightTurn(){
+        dir = (dir + 1) % 4;
     }   
 
-    public void leftTurn(Thing t){
-        t.dir = (t.dir + 3) % 4;
+    public void leftTurn(){
+        dir = (dir + 3) % 4;
     }
 
-    public abstract void leftTurn(Thing t);
-
-    public void step(Thing t) {
+    public void step() {
     final int[] dc = {
       0, 1, 0, -1
     }, dr = {
       1, 0, -1, 0
     };
-    t.row += dr[t.dir];
-    t.col += dc[t.dir];
+    t.row += dr[dir];
+    t.col += dc[dir];
   }
 
-  public abstract void leftTurn(Thing t);
-
+  public abstract void maybeTurn(Random t);
 
 }
 
