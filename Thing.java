@@ -33,6 +33,7 @@ public class Thing{
     t.col += dc[dir];
   }
 
+  //calling abstract in thing and will be defined using the specific logic given in DotChaser maybeTurn
   public abstract void maybeTurn(Random t);
 
 }

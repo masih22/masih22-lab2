@@ -7,11 +7,11 @@ public class TypeA extends Thing {
     public void maybeTurn(Random t) {
         int i = rand.nextInt(3);
         if (i == 1) {
-            rightTurn(t);
+            rightTurn();
         }
 
         if (i == 2) {
-            leftTurn(t);
+            leftTurn();
         }
     }
     
