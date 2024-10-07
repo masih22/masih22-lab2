@@ -4,7 +4,7 @@ public class TypeC extends Thing {
     private boolean movingRight = true;
     //calling super constructor to make TypeC constructor
     public TypeC (int row, int col){
-        super(row, col, 'c');
+        super(row, col, 'y');
     }
     //will just have the thing turn right and then left (diagonal motion) 
     public void maybeTurn(Random t) {

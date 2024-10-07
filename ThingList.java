@@ -4,7 +4,7 @@ public class ThingList {
     private class Node {
         Thing data; 
         Node next;
-
+        //node constrcutor that will hold Thing type 
         Node(Thing t){
             this.data = t;
             this.next = null;
@@ -12,7 +12,7 @@ public class ThingList {
     }
     
     private Node head;
-    //method for adding a new node with a new thing
+    //method for adding a new node with a thing into the list
     public void addThingNode(Thing t) {
         Node createdNode = new Node(t);
         createdNode.next = head; 

@@ -1,7 +1,7 @@
 import java.util.Random;
 
-public class Thing{
-
+public abstract class Thing{
+    //elements of node needed that are given in DotChaser
     protected int col;
     protected int dir;
     protected int timeSinceLast;
@@ -29,8 +29,8 @@ public class Thing{
     }, dr = {
       1, 0, -1, 0
     };
-    t.row += dr[dir];
-    t.col += dc[dir];
+    row += dr[dir];
+    col += dc[dir];
   }
 
   //calling abstract in thing and will be defined using the specific logic given in DotChaser maybeTurn
